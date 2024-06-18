@@ -23,65 +23,24 @@
         }
         .navbar-nav .nav-link {
             color: #007bff;
+            transition: color 0.3s;
         }
-    </style>
-
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banconomy CR</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .hero {
-            background: #007bff;
-            color: white;
-            padding: 2rem;
-            text-align: center;
+        .navbar-nav .nav-link:hover {
+            color: #0056b3;
         }
-        .section-title {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+        .navbar-brand {
+            font-weight: bold;
             color: #007bff;
+            transition: color 0.3s;
         }
-        .card img {
-            max-height: 200px;
-            object-fit: cover;
-        }
-        .navbar-nav .nav-link {
-            color: #007bff;
+        .navbar-brand:hover {
+            color: #0056b3;
         }
         .icon {
             width: 24px;
             height: 24px;
         }
     </style>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Banconomy CR</title>
-         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-         <style>
-             .hero {
-                 background: #007bff;
-                 color: white;
-                 padding: 2rem;
-                 text-align: center;
-             }
-             .section-title {
-                 margin-top: 2rem;
-                 margin-bottom: 1rem;
-                 color: #007bff;
-             }
-             .card img {
-                 max-height: 200px;
-                 object-fit: cover;
-             }
-             .navbar-nav .nav-link {
-                 color: #007bff;
-             }
-             .icon {
-                 width: 24px;
-                 height: 24px;
-             }
-         </style>
 </head>
 <body>
 
@@ -113,6 +72,7 @@
             </div>
         </div>
     </nav>
+
 
     <!-- Main Content -->
     <main class="container my-5">
@@ -263,14 +223,22 @@
                 </section>
         
         <!-- Atención al Cliente -->
-        <section id="atencion" class="mt-5">
-            <h2 class="section-title">Atención al Cliente</h2>
-            <div class="card">
-                <div class="card-body">
-                    <p>Nuestro equipo de atención al cliente está disponible para ayudarte con cualquier consulta o problema que puedas tener. Contacta con nosotros a través de teléfono, correo electrónico o visita una de nuestras sucursales.</p>
-                </div>
-            </div>
-        </section>
+<section id="atencion" class="mt-5">
+    <h2 class="section-title">Atención al Cliente</h2>
+    <div class="card">
+        <div class="card-body">
+            <p>Nuestro equipo de atención al cliente está disponible para ayudarte con cualquier consulta o problema que puedas tener. Contacta con nosotros a través de teléfono, correo electrónico, chatbot en línea o visita una de nuestras sucursales.</p>
+            <h6>Chatbot Banconomy:</h6>
+            <p>Utiliza nuestro chatbot en línea para recibir asistencia inmediata sobre preguntas frecuentes, información de cuentas y servicios, y más. Haz clic en el ícono de chat en la esquina inferior derecha de nuestra página para comenzar.</p>
+            <ul>
+                <li><strong>Teléfono:</strong> 800-123-4567</li>
+                <li><strong>Email:</strong> contacto@banconomycr.com</li>
+                <li><strong>Sucursales:</strong> Visita una de nuestras sucursales para atención personalizada.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 
         <!-- Sucursales -->
         <section id="sucursales" class="mt-5">
