@@ -141,75 +141,114 @@ const tokenEndpointURL = new URL('https://defaulte7984cac25434f888f979524335e6b.
   // Definir el contenido del estilo con el CSS proporcionado
   var css = `
     #popUp {
-      position: fixed;
-      bottom: 70px;
-      right: 10px;
-      height: 520px;
-      max-width: 1100px;
-      z-index: 999;
-      background-color: white;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            width: 90%;
+            max-width: 1100px;
+            height: 80vh;
+            max-height: 520px;
+            z-index: 999;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
 
-    #botonToggle {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-      background-color: #ffffff;
-      color: #333;
-      padding: 10px 20px;
-      border: 2px solid #333;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 14px;
-      outline: none;
-      transition: background-color 0.3s, color 0.3s;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
+        #botonToggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #ffffff;
+            color: #333;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            outline: none;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-    #botonToggle:hover {
-      background-color: #FD7E14;
-      color: #ffffff;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
+        #botonToggle:hover {
+            background-color: #FD7E14;
+            color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
 
-    #banner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-color: #FD7E14;
-      display: flex;
-      height: 50px;
-      border-radius: 20px 20px 0 0;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-      color: white;
-    }
+        #banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #FD7E14;
+            height: 50px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+            padding: 0 10px;
+        }
 
-    #banner p {
-      display: inline-block;
-      vertical-align: middle;
-      margin: auto;
-    }
+        #banner p {
+            margin: auto;
+            font-size: 14px;
+        }
 
-    #webchat {
-      top: 50px;
-      width: 1000px;
-      height: 450px;
-      padding: 10px;
-      border-radius: 20px;
-    }
+        #webchat {
+            flex: 1;
+            width: 100%;
+            padding: 10px;
+            border-radius: 0 0 20px 20px;
+            overflow: auto;
+        }
 
-    #webchat p {
-      font-size: 17px;
-    }
+        #webchat p {
+            font-size: 14px;
+        }
 
-    .webchat__text-content {
-      background-color: whitesmoke;
-      border-radius: 5px;
-    }
+        .webchat__text-content {
+            background-color: whitesmoke;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        @media (min-width: 600px) {
+            #popUp {
+                bottom: 70px;
+                right: 10px;
+                height: 520px;
+                width: 100%;
+                max-width: 1100px;
+            }
+
+            #banner p {
+                font-size: 17px;
+            }
+
+            #webchat p {
+                font-size: 17px;
+            }
+        }
+
+        @media (max-width: 599px) {
+            #popUp {
+                bottom: 20px;
+                right: 10px;
+                height: 70vh;
+                width: 95%;
+            }
+
+            #banner p {
+                font-size: 12px;
+            }
+
+            #webchat p {
+                font-size: 12px;
+            }
+        }
   `;
 
   // Asignar el contenido del CSS al elemento de estilo
